@@ -19,7 +19,7 @@ export default defineConfig({
     host: "0.0.0.0",
     proxy: {
       "/api": {
-        target: "http://localhost:5173", //"http://221.217.229.158:18108/mynfthree",
+        target: "https://mock.presstime.cn/mock/62f0a76ebbad94002827d5cb/myd",
         ws: true,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),

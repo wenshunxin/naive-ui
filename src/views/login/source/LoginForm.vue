@@ -61,14 +61,20 @@
 <script setup>
 import { ref } from "vue";
 import { getAssetsImages } from "@/utils";
-
-const model = ref({});
+import { login } from "@/api/login";
+const model = ref({
+  username: "17778171251",
+  password: "123456",
+});
 const formRef = ref();
 
 function handleOk() {
-  formRef.value?.validate((errors) => {
+  formRef.value?.validate(async (errors) => {
     if (!errors) {
       console.log("成功");
+      let res = await login({});
+      console.log(res);
+      // https://mock.presstime.cn/mock/62f0a76ebbad94002827d5cb/myd/login
     }
   });
 }
