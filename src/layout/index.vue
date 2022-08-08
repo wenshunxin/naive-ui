@@ -6,7 +6,7 @@
         <Header />
       </n-layout-header>
       <n-layout-content style="height: calc(100vh - 65px)">
-        平山道
+        <Main />
       </n-layout-content>
     </n-layout>
   </n-layout>
@@ -15,6 +15,7 @@
 <script setup name="layout">
 import Menu from "./components/Menu/index.vue";
 import Header from "./components/Header/index.vue";
+import Main from "./components/Main/index.vue";
 </script>
 
 <style></style>

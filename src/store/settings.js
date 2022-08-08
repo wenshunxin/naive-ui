@@ -5,7 +5,8 @@ export const useSettingsStore = defineStore({
   state: () => {
     return {
       primaryColor: "teal",
-      appTheme: "darkTheme",
+      appTheme: "",
+      collapsed: false
     };
   },
   actions: {
@@ -13,7 +14,10 @@ export const useSettingsStore = defineStore({
       state.primaryColor = color;
     },
     setAppTheme(theme) {
-      this.appTheme = theme ? "darkTheme" : "lightTheme";
+      this.appTheme = theme ? "darkTheme" : undefined;
     },
+    setCollapsed(collapse) {
+      this.collapsed = collapse
+    }
   },
 });

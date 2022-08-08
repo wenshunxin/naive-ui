@@ -4,8 +4,11 @@
     collapse-mode="width"
     :collapsed-width="64"
     :width="240"
+    :collapsed="collapsed"
     show-trigger
     :inverted="inverted"
+    @collapse="handleCollapse(true)"
+    @expand="handleCollapse(false)"
   >
     <n-menu :inverted="inverted" :collapsed-width="64" :options="menuOptions" />
   </n-layout-sider>
@@ -26,6 +29,12 @@ function renderIcon(icon) {
   return () => h(NIcon, null, { default: () => h(icon) });
 }
 const inverted = computed(() => settingsStore.appTheme == "darkTheme");
+const collapsed = computed(()=>settingsStore.collapsed)
+
+function handleCollapse (collapse) {
+  console.log(collapse)
+  settingsStore.setCollapsed(collapse)
+}
 const menuOptions = ref([
   {
     label: "且听风吟",

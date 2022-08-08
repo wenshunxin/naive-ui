@@ -9,15 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ffmpeg/core": "^0.10.0",
+    "@ffmpeg/ffmpeg": "^0.10.1",
     "ant-design-vue": "^3.2.10",
     "axios": "^0.27.2",
     "less": "^2.7.3",
     "lodash-es": "^4.17.21",
     "mockjs": "^1.1.0",
     "ol": "^6.15.1",
+    "ol-ext": "^3.2.28",
+    "openlayers-indoorequal": "0.0.8",
     "pinia": "^2.0.17",
     "pinia-plugin-persist": "^1.0.0",
     "vue": "^3.2.37",
+    "vue-fullpage.js": "^0.2.5",
     "vue-router": "^4.1.3"
   },
   "devDependencies": {
