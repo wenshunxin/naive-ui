@@ -8,3 +8,5 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 
 https://github.com/wenshunxin/naive-ui.git
+
+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
